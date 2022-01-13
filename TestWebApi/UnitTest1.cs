@@ -11,7 +11,7 @@ namespace TestWebApi
         {
             BookController bookController= new BookController();
 
-            bool result = bookController.Delete(3);
+            bool result =bookController.Delete(3);
             Assert.IsTrue(result);
         }
 
