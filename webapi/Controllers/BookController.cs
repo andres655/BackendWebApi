@@ -30,7 +30,7 @@ namespace webapi.Controllers
         {
             return Ok(BookData.Modificar_Book(book));
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public  bool Delete (int id)
         {
            return BookData.Eliminar(id);
